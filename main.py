@@ -40,12 +40,9 @@ while correct_guesses < 51:
 
 # states_to_learn
 
-states_to_learn = []
-for state in states_name_list:
-    if state not in correct_states:
-        states_to_learn.append(state)
+states_to_learn = [state for state in states_name_list if state not in correct_states]
 
-print(states_to_learn)
+# print(states_to_learn)
 new_data = pandas.DataFrame(states_to_learn, columns=["States to Learn"])
 print(new_data)
 new_data.to_csv("states_to_learn.csv")
