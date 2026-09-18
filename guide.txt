@@ -1,0 +1,11 @@
+Create a Python virtual environment:
+/opt/homebrew/bin/python3.12 -m venv .venv
+
+Activate it on macOS or Linux:
+source .venv/bin/activate
+
+Activate it on Windows:
+.venv\Scripts\activate
+
+Deactivate the environment:
+deactivate
